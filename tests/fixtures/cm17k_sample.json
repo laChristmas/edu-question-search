@@ -1,0 +1,16 @@
+[
+  {
+    "id": "f1",
+    "original_text": "已 知 一 次 函 数 y = 2 x + 3 ， 当 x = 4 时 ， y 的 值 是 多 少 ？",
+    "equation": "x=2*4+3",
+    "ans": "11",
+    "type": "nonlinear"
+  },
+  {
+    "id": "a1",
+    "original_text": "甲 乙 两 地 相 距 120 千 米 ， 汽 车 每 小 时 行 40 千 米 ， 几 小时 到 达 ？",
+    "equation": "x=120/40",
+    "ans": "3",
+    "type": "arithmetic"
+  }
+]

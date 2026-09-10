@@ -1,0 +1,64 @@
+{
+  "name": "formula_10k",
+  "seed": 0,
+  "quota": {
+    "ape": 1328,
+    "cm17k": 4554,
+    "geometry3k": 797,
+    "math": 3321
+  },
+  "index": "D:\\Github\\edu-question-search\\data\\index\\items.jsonl",
+  "sampling": "stratified_by_source",
+  "purpose": "Render stems to images, then search with formula detection on.",
+  "counts": {
+    "n": 10000,
+    "source": {
+      "ape": 1328,
+      "cm17k": 4554,
+      "geometry3k": 797,
+      "math": 3321
+    },
+    "kind": {
+      "algebra": 5880,
+      "function": 2255,
+      "equationset": 712,
+      "geometry": 1153
+    },
+    "has_diagram": {
+      "no": 9203,
+      "yes": 797
+    },
+    "math_type": {
+      "algebra": 788,
+      "counting and probability": 327,
+      "geometry": 356,
+      "intermediate algebra": 575,
+      "number theory": 406,
+      "prealgebra": 538,
+      "precalculus": 331
+    },
+    "math_split": {
+      "test": 1313,
+      "train": 2008
+    },
+    "math_level": {
+      "Level 4": 796,
+      "Level 1": 279,
+      "Level 5": 921,
+      "Level 2": 579,
+      "Level 3": 746
+    },
+    "geometry3k_split": {
+      "train": 569,
+      "val": 69,
+      "test": 159
+    }
+  },
+  "layout": "by_source",
+  "dirs": {
+    "ape": "ape",
+    "cm17k": "cm17k",
+    "geometry3k": "geometry3k",
+    "math": "math"
+  }
+}

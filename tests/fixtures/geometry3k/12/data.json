@@ -1,0 +1,18 @@
+{
+  "id": 12,
+  "annotat_text": "Find $x$.",
+  "problem_text": "Find x.",
+  "choices": ["3", "4", "5", "6"],
+  "answer": "A",
+  "problem_type_graph": ["Triangle"],
+  "problem_type_goal": ["Length"],
+  "data_type": "val",
+  "logic_form": {
+    "text_logic_form": ["Find(x)"],
+    "diagram_logic_form": [
+      "Equals(LengthOf(Line(A, B)), 6)",
+      "Equals(LengthOf(Line(B, C)), 8)",
+      "Equals(LengthOf(Line(A, C)), x)"
+    ]
+  }
+}

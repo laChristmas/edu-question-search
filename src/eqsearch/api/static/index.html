@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- 变式题检索页：原题优先，最多 3 条；以图搜图对齐题干/公式/附图，不比照片背景。 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>变式题检索</title>
+  <style>
+    body { font-family: sans-serif; max-width: 880px; margin: 32px auto; color: #111; }
+    textarea { width: 100%; min-height: 96px; }
+    .row { margin: 12px 0; }
+    .actions { display: flex; gap: 8px; }
+    button { padding: 8px 16px; }
+    button[type="button"] { background: #f4f4f4; border: 1px solid #ccc; }
+    .switch { display: inline-flex; align-items: center; gap: 6px; user-select: none; }
+    .hint { margin-left: 8px; }
+    .card { border: 1px solid #ddd; padding: 12px; margin: 8px 0; }
+    .meta { color: #555; font-size: 13px; }
+    .empty { color: #666; }
+    .thumb { max-width: 100%; max-height: 240px; height: auto; display: block; margin: 8px 0 4px; background: #fff; border: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>变式题检索</h1>
+  <p>以图搜图：默认比题干和题内附图；打开公式检测后再比公式。不比较照片背景。原题优先，最多 3 条。</p>
+  <form id="form">
+    <div class="row">
+      <label>题目文本（可与图片一起用，也可只上传图片）</label>
+      <textarea name="text" placeholder="粘贴题目，或只上传图片自动识字"></textarea>
+    </div>
+    <div class="row">
+      <label>题目图片（拍题即可；不比较照片背景）</label>
+      <input type="file" name="image" accept="image/*" />
+    </div>
+    <div class="row">
+      <label class="switch">
+        <input type="checkbox" id="math-ocr" checked />
+        公式检测
+      </label>
+      <span class="meta hint">开启：开源模型整图读题（含公式），再比题干 ∧ 公式 ∧ 附图。关闭：只比题干和附图</span>
+    </div>
+    <div class="actions">
+      <button type="submit" id="submit">检索</button>
+      <button type="button" id="reset-btn">重置</button>
+    </div>
+  </form>
+  <p id="status" class="meta"></p>
+  <div id="out"></div>
+  <script>
+    const form = document.getElementById("form");
+    const out = document.getElementById("out");
+    const status = document.getElementById("status");
+    const submit = document.getElementById("submit");
+    const resetBtn = document.getElementById("reset-btn");
+    const mathOcr = document.getElementById("math-ocr");
+    const MATH_OCR_KEY = "eqsearch-math-ocr";
+    let inflight = null;
+
+    function loadMathOcr() {
+      mathOcr.checked = localStorage.getItem(MATH_OCR_KEY) !== "0";
+    }
+
+    function persistMathOcr() {
+      localStorage.setItem(MATH_OCR_KEY, mathOcr.checked ? "1" : "0");
+    }
+
+    loadMathOcr();
+    mathOcr.addEventListener("change", persistMathOcr);
+
+    function resetForm() {
+      if (inflight) inflight.abort();
+      inflight = null;
+      HTMLFormElement.prototype.reset.call(form);
+      loadMathOcr();
+      out.innerHTML = "";
+      status.textContent = "";
+      submit.disabled = false;
+    }
+
+    resetBtn.addEventListener("click", resetForm);
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      out.innerHTML = "";
+      submit.disabled = true;
+      status.textContent = "检索中…公式检测会缩小大图后读题，请稍候。";
+      const data = new FormData(form);
+      data.set("ocr", "auto");
+      persistMathOcr();
+      data.set("math_ocr", mathOcr.checked ? "1" : "0");
+      const ctrl = new AbortController();
+      inflight = ctrl;
+      const timer = setTimeout(() => ctrl.abort(), 90000);
+      try {
+        const res = await fetch("/v1/search", { method: "POST", body: data, signal: ctrl.signal });
+        const raw = await res.text();
+        let body = {};
+        try {
+          body = raw ? JSON.parse(raw) : {};
+        } catch {
+          status.textContent = "请求失败";
+          out.textContent = raw || "服务器返回了无法解析的内容";
+          return;
+        }
+        if (!res.ok) {
+          status.textContent = "检索失败";
+          out.textContent = body.detail || raw || ("HTTP " + res.status);
+          return;
+        }
+        status.textContent = `召回 ${body.recalled}，原题 ${body.originals}，返回 ${body.results.length}`;
+        status.textContent += body.math_ocr ? " · 公式检测开" : " · 公式检测关";
+        if (body.math_ocr && body.formula_engine === false) {
+          status.textContent += "（读图模型未加载）";
+        }
+        if (body.has_diagram) {
+          status.textContent += " · 已裁题内附图";
+        }
+        if (body.query_text) {
+          status.textContent += ` · 识别：${body.query_text.slice(0, 40)}`;
+        }
+        if (!body.results.length) {
+          out.innerHTML = '<p class="empty">没有达到阈值的原题或变式，返回空结果。</p>';
+          return;
+        }
+        out.innerHTML = body.results.map((r) => `
+          <div class="card">
+            <div class="meta">${r.id} · ${r.relation}${r.source ? " · " + r.source : ""}${r.kind ? " · " + r.kind : ""} · 分 ${r.final_score} · 题干 ${r.surface} · 结构 ${r.structure}${body.math_ocr && r.formula != null ? " · 公式 " + r.formula : ""}${r.diagram != null ? " · 附图 " + r.diagram : ""}</div>
+            ${r.image && String(r.image).startsWith("/v1/items/") ? `<img class="thumb" src="${r.image}" alt="" />` : ""}
+            <div>${r.text}</div>
+          </div>
+        `).join("");
+      } catch (err) {
+        if (err && err.name === "AbortError" && inflight !== ctrl) {
+          return;
+        }
+        status.textContent = "检索失败";
+        out.textContent = err && err.name === "AbortError" ? "读图超时。请改用较小照片，或先关闭公式检测。" : String(err);
+      } finally {
+        clearTimeout(timer);
+        if (inflight === ctrl) inflight = null;
+        submit.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

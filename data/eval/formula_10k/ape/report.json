@@ -1,0 +1,68 @@
+{
+  "name": "formula_10k/ape",
+  "source": "ape",
+  "generated_at": "2026-09-10T11:29:43+08:00",
+  "samples_total": 1328,
+  "math_ocr": true,
+  "restored": true,
+  "note": "上一轮公式检测开的完整评测。MATH 仍保留逐条 jsonl；APE / CM17K / Geometry3K 的 jsonl 在后续重跑时被覆盖删除，表内为当时汇总。",
+  "text": {
+    "overall": {
+      "samples": 1328,
+      "hit": 1328,
+      "first": 1328,
+      "gold_original": 1328,
+      "extra_original": 0,
+      "empty": 0,
+      "hit_rate": 1.0,
+      "first_rate": 1.0,
+      "gold_original_rate": 1.0,
+      "extra_original_rate": 0.0,
+      "empty_rate": 0.0,
+      "avg_returned": 0.0,
+      "avg_elapsed_s": 0.0
+    },
+    "by_kind": {},
+    "failures": {
+      "miss": [],
+      "not_first": [],
+      "hit_not_marked_original": [],
+      "extra_original": [],
+      "miss_count": 0,
+      "not_first_count": 0,
+      "hit_not_marked_original_count": 0,
+      "extra_original_count": 0
+    },
+    "complete": true,
+    "reused": true
+  },
+  "image": {
+    "overall": {
+      "samples": 1328,
+      "hit": 1322,
+      "first": 1322,
+      "gold_original": 1320,
+      "extra_original": 0,
+      "empty": 5,
+      "hit_rate": 0.9954819277108434,
+      "first_rate": 0.9954819277108434,
+      "gold_original_rate": 0.9939759036144579,
+      "extra_original_rate": 0.0,
+      "empty_rate": 0.0037650602409638554,
+      "avg_returned": 1.05,
+      "avg_elapsed_s": 3.48
+    },
+    "by_kind": {},
+    "failures": {
+      "miss": [],
+      "not_first": [],
+      "hit_not_marked_original": [],
+      "extra_original": [],
+      "miss_count": 0,
+      "not_first_count": 0,
+      "hit_not_marked_original_count": 0,
+      "extra_original_count": 0
+    },
+    "complete": true
+  }
+}

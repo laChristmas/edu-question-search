@@ -1,0 +1,3716 @@
+{
+  "name": "formula_10k/geometry3k",
+  "source": "geometry3k",
+  "generated_at": "2026-09-10T11:55:14+08:00",
+  "samples_total": 797,
+  "math_ocr": false,
+  "text": {
+    "overall": {
+      "samples": 797,
+      "hit": 465,
+      "first": 419,
+      "gold_original": 465,
+      "extra_original": 438,
+      "empty": 0,
+      "hit_rate": 0.5834378920953576,
+      "first_rate": 0.5257214554579673,
+      "gold_original_rate": 0.5834378920953576,
+      "extra_original_rate": 0.5495608531994981,
+      "empty_rate": 0.0,
+      "avg_returned": 1.8180677540777916,
+      "avg_elapsed_s": 0.32671769134253453
+    },
+    "by_kind": {
+      "geometry": {
+        "samples": 797,
+        "hit": 465,
+        "first": 419,
+        "gold_original": 465,
+        "extra_original": 438,
+        "empty": 0,
+        "hit_rate": 0.5834378920953576,
+        "first_rate": 0.5257214554579673,
+        "gold_original_rate": 0.5834378920953576,
+        "extra_original_rate": 0.5495608531994981,
+        "empty_rate": 0.0,
+        "avg_returned": 1.8180677540777916,
+        "avg_elapsed_s": 0.32671769134253453
+      }
+    },
+    "failures": {
+      "miss": [
+        {
+          "id": "g3k-1006",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-102",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2231",
+              "relation": "original",
+              "final": 1.2873,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1028",
+          "source": "geometry3k",
+          "query_text": "Find R S.",
+          "results": [
+            {
+              "id": "g3k-2216",
+              "relation": "original",
+              "final": 1.2535,
+              "surface": 0.4053,
+              "structure": 0.3816,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1040",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle R.",
+          "results": [
+            {
+              "id": "g3k-481",
+              "relation": "original",
+              "final": 1.2593,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2489",
+              "relation": "original",
+              "final": 1.2493,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2123",
+              "relation": "original",
+              "final": 1.2473,
+              "surface": 0.3455,
+              "structure": 0.3258,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1050",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1075",
+          "source": "geometry3k",
+          "query_text": "Find A B.",
+          "results": [
+            {
+              "id": "g3k-313",
+              "relation": "original",
+              "final": 1.2527,
+              "surface": 0.4053,
+              "structure": 0.3816,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2956",
+              "relation": "original",
+              "final": 1.2503,
+              "surface": 0.3495,
+              "structure": 0.3274,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1926",
+              "relation": "original",
+              "final": 1.2321,
+              "surface": 0.3509,
+              "structure": 0.3275,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1089",
+          "source": "geometry3k",
+          "query_text": "Solve for x.",
+          "results": [
+            {
+              "id": "g3k-1441",
+              "relation": "original",
+              "final": 1.2723,
+              "surface": 0.602,
+              "structure": 0.5801,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-768",
+              "relation": "original",
+              "final": 1.2698,
+              "surface": 0.4984,
+              "structure": 0.4759,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2013",
+              "relation": "original",
+              "final": 1.2673,
+              "surface": 0.5321,
+              "structure": 0.5136,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1092",
+          "source": "geometry3k",
+          "query_text": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent.",
+          "results": [
+            {
+              "id": "g3k-201",
+              "relation": "original",
+              "final": 1.2896,
+              "surface": 0.8868,
+              "structure": 0.8775,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1094",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2231",
+              "relation": "original",
+              "final": 1.2873,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1115",
+          "source": "geometry3k",
+          "query_text": "Find the area of the quadrilateral.",
+          "results": [
+            {
+              "id": "g3k-1107",
+              "relation": "original",
+              "final": 1.2812,
+              "surface": 0.7701,
+              "structure": 0.7571,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-989",
+              "relation": "original",
+              "final": 1.281,
+              "surface": 0.7842,
+              "structure": 0.7719,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-283",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7247,
+              "structure": 0.711,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1122",
+          "source": "geometry3k",
+          "query_text": "Find the measure of the altitude drawn to the hypotenuse.",
+          "results": [
+            {
+              "id": "g3k-2035",
+              "relation": "original",
+              "final": 1.2863,
+              "surface": 0.8271,
+              "structure": 0.8157,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1135",
+          "source": "geometry3k",
+          "query_text": "Find z in the figure.",
+          "results": [
+            {
+              "id": "g3k-787",
+              "relation": "original",
+              "final": 1.2741,
+              "surface": 0.7244,
+              "structure": 0.7078,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-684",
+              "relation": "original",
+              "final": 1.2516,
+              "surface": 0.4583,
+              "structure": 0.44,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1142",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-111",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1105",
+              "relation": "original",
+              "final": 1.2481,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1326",
+              "relation": "original",
+              "final": 1.246,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1143",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-387",
+              "relation": "original",
+              "final": 1.2881,
+              "surface": 0.8707,
+              "structure": 0.8622,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2173",
+              "relation": "original",
+              "final": 1.2859,
+              "surface": 0.8964,
+              "structure": 0.8907,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1513",
+              "relation": "original",
+              "final": 1.2834,
+              "surface": 0.8805,
+              "structure": 0.8727,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1151",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-111",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1105",
+              "relation": "original",
+              "final": 1.2481,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1326",
+              "relation": "original",
+              "final": 1.246,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1153",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the triangle. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-773",
+              "relation": "original",
+              "final": 1.2878,
+              "surface": 0.8879,
+              "structure": 0.8845,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1158",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-111",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1105",
+              "relation": "original",
+              "final": 1.2481,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1326",
+              "relation": "original",
+              "final": 1.246,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1162",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure.",
+          "results": [
+            {
+              "id": "g3k-2401",
+              "relation": "original",
+              "final": 1.2778,
+              "surface": 0.7339,
+              "structure": 0.7191,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1645",
+              "relation": "original",
+              "final": 1.2774,
+              "surface": 0.7786,
+              "structure": 0.7679,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2432",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7178,
+              "structure": 0.7023,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1167",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1172",
+          "source": "geometry3k",
+          "query_text": "Find z in the figure.",
+          "results": [
+            {
+              "id": "g3k-787",
+              "relation": "original",
+              "final": 1.2741,
+              "surface": 0.7244,
+              "structure": 0.7078,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-684",
+              "relation": "original",
+              "final": 1.2516,
+              "surface": 0.4583,
+              "structure": 0.44,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1175",
+          "source": "geometry3k",
+          "query_text": "Find x. Assume that segments that appear to be tangent are tangent.",
+          "results": [
+            {
+              "id": "g3k-898",
+              "relation": "original",
+              "final": 1.2888,
+              "surface": 0.8678,
+              "structure": 0.8571,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-484",
+              "relation": "original",
+              "final": 1.2883,
+              "surface": 0.8577,
+              "structure": 0.8463,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1179",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the parallelogram.",
+          "results": [
+            {
+              "id": "g3k-2894",
+              "relation": "original",
+              "final": 1.2824,
+              "surface": 0.7819,
+              "structure": 0.7808,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1209",
+          "source": "geometry3k",
+          "query_text": "Find the measure of the altitude drawn to the hypotenuse.",
+          "results": [
+            {
+              "id": "g3k-2035",
+              "relation": "original",
+              "final": 1.2863,
+              "surface": 0.8271,
+              "structure": 0.8157,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1211",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2231",
+              "relation": "original",
+              "final": 1.2873,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1216",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded region. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2545",
+              "relation": "original",
+              "final": 1.2872,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-343",
+              "relation": "original",
+              "final": 1.2802,
+              "surface": 0.7562,
+              "structure": 0.7421,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-941",
+              "relation": "original",
+              "final": 1.26,
+              "surface": 0.5222,
+              "structure": 0.5024,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1217",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1237",
+          "source": "geometry3k",
+          "query_text": "In \\triangle A B C, B D is a median. If A D = 3 x + 5 and C D = 5 x - 1, find A C.",
+          "results": [
+            {
+              "id": "g3k-535",
+              "relation": "original",
+              "final": 1.2878,
+              "surface": 0.8264,
+              "structure": 0.8296,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1250",
+          "source": "geometry3k",
+          "query_text": "Find x so that the quadrilateral is a parallelogram.",
+          "results": [
+            {
+              "id": "g3k-1981",
+              "relation": "original",
+              "final": 1.285,
+              "surface": 0.8328,
+              "structure": 0.8335,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1990",
+              "relation": "original",
+              "final": 1.2843,
+              "surface": 0.8215,
+              "structure": 0.8212,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-449",
+              "relation": "original",
+              "final": 1.283,
+              "surface": 0.8055,
+              "structure": 0.7933,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1252",
+          "source": "geometry3k",
+          "query_text": "Find x. Round the side measure to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-632",
+              "relation": "original",
+              "final": 1.2842,
+              "surface": 0.8123,
+              "structure": 0.8004,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1260",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "not_first": [
+        {
+          "id": "g3k-1005",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle S.",
+          "results": [
+            {
+              "id": "g3k-1566",
+              "relation": "original",
+              "final": 1.2584,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1005",
+              "relation": "original",
+              "final": 1.2508,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2575",
+              "relation": "original",
+              "final": 1.2503,
+              "surface": 0.3752,
+              "structure": 0.3524,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1041",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle K.",
+          "results": [
+            {
+              "id": "g3k-1366",
+              "relation": "original",
+              "final": 1.2655,
+              "surface": 0.4833,
+              "structure": 0.4583,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-930",
+              "relation": "original",
+              "final": 1.2641,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1041",
+              "relation": "original",
+              "final": 1.2541,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1069",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle Q.",
+          "results": [
+            {
+              "id": "g3k-756",
+              "relation": "original",
+              "final": 1.2597,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1069",
+              "relation": "original",
+              "final": 1.243,
+              "surface": 0.3509,
+              "structure": 0.3275,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1314",
+          "source": "geometry3k",
+          "query_text": "Solve for x in the figure below.",
+          "results": [
+            {
+              "id": "g3k-1567",
+              "relation": "original",
+              "final": 1.2863,
+              "surface": 0.8024,
+              "structure": 0.7899,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1715",
+              "relation": "original",
+              "final": 1.2845,
+              "surface": 0.7695,
+              "structure": 0.7556,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1314",
+              "relation": "original",
+              "final": 1.2816,
+              "surface": 0.7254,
+              "structure": 0.7097,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1623",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-603",
+              "relation": "original",
+              "final": 1.2861,
+              "surface": 0.8643,
+              "structure": 0.8548,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1623",
+              "relation": "original",
+              "final": 1.2858,
+              "surface": 0.8774,
+              "structure": 0.877,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-164",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle 6.",
+          "results": [
+            {
+              "id": "g3k-337",
+              "relation": "original",
+              "final": 1.2536,
+              "surface": 0.4361,
+              "structure": 0.4848,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2480",
+              "relation": "original",
+              "final": 1.2487,
+              "surface": 0.3769,
+              "structure": 0.4333,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-164",
+              "relation": "original",
+              "final": 1.2483,
+              "surface": 0.371,
+              "structure": 0.4162,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1645",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure.",
+          "results": [
+            {
+              "id": "g3k-2401",
+              "relation": "original",
+              "final": 1.2778,
+              "surface": 0.7339,
+              "structure": 0.7191,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1645",
+              "relation": "original",
+              "final": 1.2774,
+              "surface": 0.7786,
+              "structure": 0.7679,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2432",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7178,
+              "structure": 0.7023,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1648",
+          "source": "geometry3k",
+          "query_text": "Find x in the parallelogram.",
+          "results": [
+            {
+              "id": "g3k-2568",
+              "relation": "original",
+              "final": 1.2801,
+              "surface": 0.7046,
+              "structure": 0.7038,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1648",
+              "relation": "original",
+              "final": 1.2791,
+              "surface": 0.6891,
+              "structure": 0.6872,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1651",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2098",
+              "relation": "original",
+              "final": 1.2865,
+              "surface": 0.8428,
+              "structure": 0.8323,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1651",
+              "relation": "original",
+              "final": 1.2861,
+              "surface": 0.8316,
+              "structure": 0.8204,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2528",
+              "relation": "original",
+              "final": 1.286,
+              "surface": 0.8662,
+              "structure": 0.8572,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1658",
+          "source": "geometry3k",
+          "query_text": "Find the value of x.",
+          "results": [
+            {
+              "id": "g3k-2283",
+              "relation": "original",
+              "final": 1.2681,
+              "surface": 0.7006,
+              "structure": 0.6853,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1768",
+              "relation": "original",
+              "final": 1.2658,
+              "surface": 0.6705,
+              "structure": 0.6521,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1658",
+              "relation": "original",
+              "final": 1.2648,
+              "surface": 0.6517,
+              "structure": 0.6329,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1748",
+          "source": "geometry3k",
+          "query_text": "Find the measure of \\angle 1 if m \\angle D G F = 53 and m \\angle A G C = 40.",
+          "results": [
+            {
+              "id": "g3k-52",
+              "relation": "original",
+              "final": 1.2826,
+              "surface": 0.8147,
+              "structure": 0.8146,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1748",
+              "relation": "original",
+              "final": 1.2686,
+              "surface": 0.6988,
+              "structure": 0.6866,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1755",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle F.",
+          "results": [
+            {
+              "id": "g3k-1849",
+              "relation": "original",
+              "final": 1.2437,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1755",
+              "relation": "original",
+              "final": 1.236,
+              "surface": 0.3455,
+              "structure": 0.3258,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1768",
+          "source": "geometry3k",
+          "query_text": "Find the value of x.",
+          "results": [
+            {
+              "id": "g3k-2283",
+              "relation": "original",
+              "final": 1.2681,
+              "surface": 0.7006,
+              "structure": 0.6853,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1768",
+              "relation": "original",
+              "final": 1.2658,
+              "surface": 0.6705,
+              "structure": 0.6521,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1658",
+              "relation": "original",
+              "final": 1.2648,
+              "surface": 0.6517,
+              "structure": 0.6329,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1797",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle 5.",
+          "results": [
+            {
+              "id": "g3k-841",
+              "relation": "original",
+              "final": 1.2536,
+              "surface": 0.4361,
+              "structure": 0.4848,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1797",
+              "relation": "original",
+              "final": 1.2483,
+              "surface": 0.371,
+              "structure": 0.4162,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1826",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of \\parallelogram A B C D.",
+          "results": [
+            {
+              "id": "g3k-1776",
+              "relation": "original",
+              "final": 1.2642,
+              "surface": 0.6516,
+              "structure": 0.6335,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1826",
+              "relation": "original",
+              "final": 1.2567,
+              "surface": 0.5949,
+              "structure": 0.5694,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2110",
+              "relation": "original",
+              "final": 1.2494,
+              "surface": 0.5095,
+              "structure": 0.494,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1840",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle W.",
+          "results": [
+            {
+              "id": "g3k-2024",
+              "relation": "original",
+              "final": 1.2596,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1840",
+              "relation": "original",
+              "final": 1.2551,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2862",
+              "relation": "original",
+              "final": 1.2427,
+              "surface": 0.3513,
+              "structure": 0.3319,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2020",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle C.",
+          "results": [
+            {
+              "id": "g3k-1251",
+              "relation": "original",
+              "final": 1.2565,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2020",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2101",
+              "relation": "original",
+              "final": 1.2456,
+              "surface": 0.3455,
+              "structure": 0.3258,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-206",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle 3.",
+          "results": [
+            {
+              "id": "g3k-2255",
+              "relation": "original",
+              "final": 1.256,
+              "surface": 0.461,
+              "structure": 0.5048,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-829",
+              "relation": "original",
+              "final": 1.2536,
+              "surface": 0.4361,
+              "structure": 0.4848,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-206",
+              "relation": "original",
+              "final": 1.2529,
+              "surface": 0.4,
+              "structure": 0.4524,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2110",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of A B C D.",
+          "results": [
+            {
+              "id": "g3k-1776",
+              "relation": "original",
+              "final": 1.2642,
+              "surface": 0.6516,
+              "structure": 0.6335,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1826",
+              "relation": "original",
+              "final": 1.2567,
+              "surface": 0.5949,
+              "structure": 0.5694,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2110",
+              "relation": "original",
+              "final": 1.2494,
+              "surface": 0.5095,
+              "structure": 0.494,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2254",
+          "source": "geometry3k",
+          "query_text": "Find x so that m \\parallel n.",
+          "results": [
+            {
+              "id": "g3k-1334",
+              "relation": "original",
+              "final": 1.2737,
+              "surface": 0.6826,
+              "structure": 0.6641,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2254",
+              "relation": "original",
+              "final": 1.2577,
+              "surface": 0.5908,
+              "structure": 0.559,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2264",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle 2.",
+          "results": [
+            {
+              "id": "g3k-1784",
+              "relation": "original",
+              "final": 1.256,
+              "surface": 0.461,
+              "structure": 0.5048,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2264",
+              "relation": "original",
+              "final": 1.2536,
+              "surface": 0.4361,
+              "structure": 0.4848,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2954",
+              "relation": "original",
+              "final": 1.2529,
+              "surface": 0.4,
+              "structure": 0.4524,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2275",
+          "source": "geometry3k",
+          "query_text": "Find b.",
+          "results": [
+            {
+              "id": "g3k-1285",
+              "relation": "original",
+              "final": 1.2502,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2275",
+              "relation": "original",
+              "final": 1.2258,
+              "surface": 0.3067,
+              "structure": 0.2833,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2295",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the figure. Round to the nearest hundredth, if necessary.",
+          "results": [
+            {
+              "id": "g3k-451",
+              "relation": "original",
+              "final": 1.2866,
+              "surface": 0.8596,
+              "structure": 0.8497,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2295",
+              "relation": "original",
+              "final": 1.2865,
+              "surface": 0.8887,
+              "structure": 0.8814,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1192",
+              "relation": "original",
+              "final": 1.2808,
+              "surface": 0.7752,
+              "structure": 0.761,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2432",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure.",
+          "results": [
+            {
+              "id": "g3k-2401",
+              "relation": "original",
+              "final": 1.2778,
+              "surface": 0.7339,
+              "structure": 0.7191,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1645",
+              "relation": "original",
+              "final": 1.2774,
+              "surface": 0.7786,
+              "structure": 0.7679,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2432",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7178,
+              "structure": 0.7023,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2575",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle S.",
+          "results": [
+            {
+              "id": "g3k-1566",
+              "relation": "original",
+              "final": 1.2584,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1005",
+              "relation": "original",
+              "final": 1.2508,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2575",
+              "relation": "original",
+              "final": 1.2503,
+              "surface": 0.3752,
+              "structure": 0.3524,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2652",
+          "source": "geometry3k",
+          "query_text": "a = 14, b = 48, and c = 50, find \\sin A.",
+          "results": [
+            {
+              "id": "g3k-1511",
+              "relation": "original",
+              "final": 1.2747,
+              "surface": 0.6904,
+              "structure": 0.6667,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2652",
+              "relation": "original",
+              "final": 1.2693,
+              "surface": 0.6715,
+              "structure": 0.6511,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2689",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the figure. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-934",
+              "relation": "original",
+              "final": 1.287,
+              "surface": 0.8603,
+              "structure": 0.8507,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2689",
+              "relation": "original",
+              "final": 1.2849,
+              "surface": 0.8824,
+              "structure": 0.875,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2103",
+              "relation": "original",
+              "final": 1.2817,
+              "surface": 0.8519,
+              "structure": 0.8419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-273",
+          "source": "geometry3k",
+          "query_text": "a = 14, b = 48, and c = 50, find \\tan A.",
+          "results": [
+            {
+              "id": "g3k-147",
+              "relation": "original",
+              "final": 1.2738,
+              "surface": 0.6904,
+              "structure": 0.6667,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-273",
+              "relation": "original",
+              "final": 1.2686,
+              "surface": 0.6715,
+              "structure": 0.6511,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-283",
+          "source": "geometry3k",
+          "query_text": "Find the area of the quadrilateral.",
+          "results": [
+            {
+              "id": "g3k-1107",
+              "relation": "original",
+              "final": 1.2812,
+              "surface": 0.7701,
+              "structure": 0.7571,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-989",
+              "relation": "original",
+              "final": 1.281,
+              "surface": 0.7842,
+              "structure": 0.7719,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-283",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7247,
+              "structure": 0.711,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2935",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure in feet. Round to the nearest tenth, if necessary.",
+          "results": [
+            {
+              "id": "g3k-1481",
+              "relation": "original",
+              "final": 1.2892,
+              "surface": 0.9168,
+              "structure": 0.9125,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1508",
+              "relation": "original",
+              "final": 1.2849,
+              "surface": 0.8928,
+              "structure": 0.8858,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2935",
+              "relation": "original",
+              "final": 1.2842,
+              "surface": 0.8751,
+              "structure": 0.8669,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "hit_not_marked_original": [],
+      "extra_original": [
+        {
+          "id": "g3k-1005",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle S.",
+          "results": [
+            {
+              "id": "g3k-1566",
+              "relation": "original",
+              "final": 1.2584,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1005",
+              "relation": "original",
+              "final": 1.2508,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2575",
+              "relation": "original",
+              "final": 1.2503,
+              "surface": 0.3752,
+              "structure": 0.3524,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1006",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-102",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2231",
+              "relation": "original",
+              "final": 1.2873,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1028",
+          "source": "geometry3k",
+          "query_text": "Find R S.",
+          "results": [
+            {
+              "id": "g3k-2216",
+              "relation": "original",
+              "final": 1.2535,
+              "surface": 0.4053,
+              "structure": 0.3816,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1040",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle R.",
+          "results": [
+            {
+              "id": "g3k-481",
+              "relation": "original",
+              "final": 1.2593,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2489",
+              "relation": "original",
+              "final": 1.2493,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2123",
+              "relation": "original",
+              "final": 1.2473,
+              "surface": 0.3455,
+              "structure": 0.3258,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1041",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle K.",
+          "results": [
+            {
+              "id": "g3k-1366",
+              "relation": "original",
+              "final": 1.2655,
+              "surface": 0.4833,
+              "structure": 0.4583,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-930",
+              "relation": "original",
+              "final": 1.2641,
+              "surface": 0.461,
+              "structure": 0.4363,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1041",
+              "relation": "original",
+              "final": 1.2541,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1050",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1069",
+          "source": "geometry3k",
+          "query_text": "Find m \\angle Q.",
+          "results": [
+            {
+              "id": "g3k-756",
+              "relation": "original",
+              "final": 1.2597,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1069",
+              "relation": "original",
+              "final": 1.243,
+              "surface": 0.3509,
+              "structure": 0.3275,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1075",
+          "source": "geometry3k",
+          "query_text": "Find A B.",
+          "results": [
+            {
+              "id": "g3k-313",
+              "relation": "original",
+              "final": 1.2527,
+              "surface": 0.4053,
+              "structure": 0.3816,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2956",
+              "relation": "original",
+              "final": 1.2503,
+              "surface": 0.3495,
+              "structure": 0.3274,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1926",
+              "relation": "original",
+              "final": 1.2321,
+              "surface": 0.3509,
+              "structure": 0.3275,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1089",
+          "source": "geometry3k",
+          "query_text": "Solve for x.",
+          "results": [
+            {
+              "id": "g3k-1441",
+              "relation": "original",
+              "final": 1.2723,
+              "surface": 0.602,
+              "structure": 0.5801,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-768",
+              "relation": "original",
+              "final": 1.2698,
+              "surface": 0.4984,
+              "structure": 0.4759,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2013",
+              "relation": "original",
+              "final": 1.2673,
+              "surface": 0.5321,
+              "structure": 0.5136,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1092",
+          "source": "geometry3k",
+          "query_text": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent.",
+          "results": [
+            {
+              "id": "g3k-201",
+              "relation": "original",
+              "final": 1.2896,
+              "surface": 0.8868,
+              "structure": 0.8775,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1094",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2231",
+              "relation": "original",
+              "final": 1.2873,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1115",
+          "source": "geometry3k",
+          "query_text": "Find the area of the quadrilateral.",
+          "results": [
+            {
+              "id": "g3k-1107",
+              "relation": "original",
+              "final": 1.2812,
+              "surface": 0.7701,
+              "structure": 0.7571,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-989",
+              "relation": "original",
+              "final": 1.281,
+              "surface": 0.7842,
+              "structure": 0.7719,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-283",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7247,
+              "structure": 0.711,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1122",
+          "source": "geometry3k",
+          "query_text": "Find the measure of the altitude drawn to the hypotenuse.",
+          "results": [
+            {
+              "id": "g3k-2035",
+              "relation": "original",
+              "final": 1.2863,
+              "surface": 0.8271,
+              "structure": 0.8157,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1130",
+          "source": "geometry3k",
+          "query_text": "In rhombus L M P Q, m \\angle Q L M = 2 x^ { 2 } - 10, m \\angle Q P M = 8 x, and M P = 10. Find m \\angle L P Q.",
+          "results": [
+            {
+              "id": "g3k-1130",
+              "relation": "original",
+              "final": 1.2853,
+              "surface": 0.7956,
+              "structure": 0.7919,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1936",
+              "relation": "original",
+              "final": 1.2801,
+              "surface": 0.7453,
+              "structure": 0.7372,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1135",
+          "source": "geometry3k",
+          "query_text": "Find z in the figure.",
+          "results": [
+            {
+              "id": "g3k-787",
+              "relation": "original",
+              "final": 1.2741,
+              "surface": 0.7244,
+              "structure": 0.7078,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-684",
+              "relation": "original",
+              "final": 1.2516,
+              "surface": 0.4583,
+              "structure": 0.44,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1142",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-111",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1105",
+              "relation": "original",
+              "final": 1.2481,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1326",
+              "relation": "original",
+              "final": 1.246,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1143",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-387",
+              "relation": "original",
+              "final": 1.2881,
+              "surface": 0.8707,
+              "structure": 0.8622,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2173",
+              "relation": "original",
+              "final": 1.2859,
+              "surface": 0.8964,
+              "structure": 0.8907,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1513",
+              "relation": "original",
+              "final": 1.2834,
+              "surface": 0.8805,
+              "structure": 0.8727,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1151",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-111",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1105",
+              "relation": "original",
+              "final": 1.2481,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1326",
+              "relation": "original",
+              "final": 1.246,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1153",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the triangle. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-773",
+              "relation": "original",
+              "final": 1.2878,
+              "surface": 0.8879,
+              "structure": 0.8845,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1158",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-111",
+              "relation": "original",
+              "final": 1.2484,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1105",
+              "relation": "original",
+              "final": 1.2481,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1326",
+              "relation": "original",
+              "final": 1.246,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1162",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure.",
+          "results": [
+            {
+              "id": "g3k-2401",
+              "relation": "original",
+              "final": 1.2778,
+              "surface": 0.7339,
+              "structure": 0.7191,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1645",
+              "relation": "original",
+              "final": 1.2774,
+              "surface": 0.7786,
+              "structure": 0.7679,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2432",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.7178,
+              "structure": 0.7023,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1167",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1172",
+          "source": "geometry3k",
+          "query_text": "Find z in the figure.",
+          "results": [
+            {
+              "id": "g3k-787",
+              "relation": "original",
+              "final": 1.2741,
+              "surface": 0.7244,
+              "structure": 0.7078,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-684",
+              "relation": "original",
+              "final": 1.2516,
+              "surface": 0.4583,
+              "structure": 0.44,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1175",
+          "source": "geometry3k",
+          "query_text": "Find x. Assume that segments that appear to be tangent are tangent.",
+          "results": [
+            {
+              "id": "g3k-898",
+              "relation": "original",
+              "final": 1.2888,
+              "surface": 0.8678,
+              "structure": 0.8571,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-484",
+              "relation": "original",
+              "final": 1.2883,
+              "surface": 0.8577,
+              "structure": 0.8463,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1179",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the parallelogram.",
+          "results": [
+            {
+              "id": "g3k-2894",
+              "relation": "original",
+              "final": 1.2824,
+              "surface": 0.7819,
+              "structure": 0.7808,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1209",
+          "source": "geometry3k",
+          "query_text": "Find the measure of the altitude drawn to the hypotenuse.",
+          "results": [
+            {
+              "id": "g3k-2035",
+              "relation": "original",
+              "final": 1.2863,
+              "surface": 0.8271,
+              "structure": 0.8157,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1211",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2231",
+              "relation": "original",
+              "final": 1.2873,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1216",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded region. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-2545",
+              "relation": "original",
+              "final": 1.2872,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-343",
+              "relation": "original",
+              "final": 1.2802,
+              "surface": 0.7562,
+              "structure": 0.7421,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-941",
+              "relation": "original",
+              "final": 1.26,
+              "surface": 0.5222,
+              "structure": 0.5024,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1217",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2474,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-793",
+              "relation": "original",
+              "final": 1.2447,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2957",
+              "relation": "original",
+              "final": 1.2446,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "miss_count": 332,
+      "not_first_count": 46,
+      "hit_not_marked_original_count": 0,
+      "extra_original_count": 438
+    },
+    "complete": true
+  },
+  "image": {
+    "overall": {
+      "samples": 797,
+      "hit": 327,
+      "first": 321,
+      "gold_original": 323,
+      "extra_original": 140,
+      "empty": 406,
+      "hit_rate": 0.410288582183187,
+      "first_rate": 0.4027603513174404,
+      "gold_original_rate": 0.40526976160602257,
+      "extra_original_rate": 0.17565872020075282,
+      "empty_rate": 0.5094102885821832,
+      "avg_returned": 0.7176913425345044,
+      "avg_elapsed_s": 0.8455445420326223
+    },
+    "by_kind": {
+      "geometry": {
+        "samples": 797,
+        "hit": 327,
+        "first": 321,
+        "gold_original": 323,
+        "extra_original": 140,
+        "empty": 406,
+        "hit_rate": 0.410288582183187,
+        "first_rate": 0.4027603513174404,
+        "gold_original_rate": 0.40526976160602257,
+        "extra_original_rate": 0.17565872020075282,
+        "empty_rate": 0.5094102885821832,
+        "avg_returned": 0.7176913425345044,
+        "avg_elapsed_s": 0.8455445420326223
+      }
+    },
+    "failures": {
+      "miss": [
+        {
+          "id": "g3k-1005",
+          "source": "geometry3k",
+          "query_text": "Find m ∠ S.(2x+5)°(2x+7)°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1006",
+          "source": "geometry3k",
+          "query_text": "Find x.2x+13x-1",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-102",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.148°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1028",
+          "source": "geometry3k",
+          "query_text": "Find R S.3x + 22x+4",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1040",
+          "source": "geometry3k",
+          "query_text": "Find m ∠ R.27. M",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1041",
+          "source": "geometry3k",
+          "query_text": "Find m ∠ K.(2x − 8)°(3x−6)°(x+ 10)°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1045",
+          "source": "geometry3k",
+          "query_text": "In the figure, Q R ∥ T S, Q T∥ R S, and m ∠ 1 = 131. Find the measure of ∠ 6.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1050",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2528,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1377",
+              "relation": "original",
+              "final": 1.249,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1069",
+          "source": "geometry3k",
+          "query_text": "Find m ∠Q.27. M",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1075",
+          "source": "geometry3k",
+          "query_text": "Find A B.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1082",
+          "source": "geometry3k",
+          "query_text": "G J is a diameter of K. Find m G L H.122°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1089",
+          "source": "geometry3k",
+          "query_text": "Solve for x.4.5 m(4x +1)°(5x−5)°4.5 m",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1096",
+          "source": "geometry3k",
+          "query_text": "Find the area of a regular hexagon with a perimeter of 72 feet.12 ft12 ft←12 ft→",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-110",
+          "source": "geometry3k",
+          "query_text": "P M is a diameter of R. Find m M Q.115°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1103",
+          "source": "geometry3k",
+          "query_text": "The pair of polygons is similar. Find A B.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1115",
+          "source": "geometry3k",
+          "query_text": "Find the area of the quadrilateral.10 cm13 cm13 cm10 cm",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1135",
+          "source": "geometry3k",
+          "query_text": "Find z in the figure.(4x + 6)°(2y + 8)°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1136",
+          "source": "geometry3k",
+          "query_text": "Find m ∠TQR.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1142",
+          "source": "geometry3k",
+          "query_text": "Find y.(2x)°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1143",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure. Round to the nearest tenth if necessary.22 cm15 cm31 cm",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1149",
+          "source": "geometry3k",
+          "query_text": " m ∠ W X J = 130, and m ∠ W Z G = 20, find m ∠ J H G.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1151",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-1303",
+              "relation": "original",
+              "final": 1.2509,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1153",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the triangle. Round to the nearest tenth if necessary.21.5 in.8in.115in.5 in.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1156",
+          "source": "geometry3k",
+          "query_text": "If M N P Q ∼ X Y Z W, find the scale factor of M N P Q to X Y Z W.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1159",
+          "source": "geometry3k",
+          "query_text": "H K and I G are diameters of L. Find m H I.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1162",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure.",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1172",
+          "source": "geometry3k",
+          "query_text": "Find z in the figure.(4z + 2)°(3y −11)°(y + 19)°",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1173",
+          "source": "geometry3k",
+          "query_text": "Polygons F G H J K and V W X U Z are similar regular pentagons. Find the scale factor.rpentagons.F 4.2 cm KV 6.3 cm z",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1175",
+          "source": "geometry3k",
+          "query_text": "Find x. Assume that segments that appear to be tangent are tangent.12x+ 2",
+          "results": [],
+          "error": ""
+        },
+        {
+          "id": "g3k-1179",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the parallelogram.21 cm17 cm",
+          "results": [],
+          "error": ""
+        }
+      ],
+      "not_first": [
+        {
+          "id": "g3k-1685",
+          "source": "geometry3k",
+          "query_text": "Find the measure of ∠ 4 if m ∠ D G F = 53 and m ∠ A G C = 40.",
+          "results": [
+            {
+              "id": "g3k-2138",
+              "relation": "original",
+              "final": 1.2756,
+              "surface": 0.742,
+              "structure": 0.7349,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1685",
+              "relation": "original",
+              "final": 1.262,
+              "surface": 0.6386,
+              "structure": 0.6251,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1704",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1257",
+              "relation": "original",
+              "final": 1.25,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1704",
+              "relation": "original",
+              "final": 1.2494,
+              "surface": 0.4,
+              "structure": 0.375,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2652",
+          "source": "geometry3k",
+          "query_text": "a = 14, b = 48, and c = 50, find sin A.",
+          "results": [
+            {
+              "id": "g3k-1511",
+              "relation": "original",
+              "final": 1.2789,
+              "surface": 0.6904,
+              "structure": 0.6667,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2652",
+              "relation": "original",
+              "final": 1.2738,
+              "surface": 0.6715,
+              "structure": 0.6511,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2853",
+              "relation": "original",
+              "final": 1.2607,
+              "surface": 0.6012,
+              "structure": 0.5678,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-273",
+          "source": "geometry3k",
+          "query_text": "a = 14, b = 48, and c = 50, find tan A.",
+          "results": [
+            {
+              "id": "g3k-147",
+              "relation": "original",
+              "final": 1.2781,
+              "surface": 0.6904,
+              "structure": 0.6667,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-273",
+              "relation": "original",
+              "final": 1.2732,
+              "surface": 0.6715,
+              "structure": 0.6511,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2652",
+              "relation": "original",
+              "final": 1.2613,
+              "surface": 0.5792,
+              "structure": 0.5491,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-672",
+          "source": "geometry3k",
+          "query_text": "Use parallelogram A B C D to find y.",
+          "results": [
+            {
+              "id": "g3k-1938",
+              "relation": "original",
+              "final": 1.2856,
+              "surface": 0.67,
+              "structure": 0.6664,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-672",
+              "relation": "original",
+              "final": 1.2848,
+              "surface": 0.7236,
+              "structure": 0.722,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2943",
+              "relation": "original",
+              "final": 1.2845,
+              "surface": 0.67,
+              "structure": 0.6664,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-736",
+          "source": "geometry3k",
+          "query_text": "Find the area of the blue region.",
+          "results": [
+            {
+              "id": "g3k-2004",
+              "relation": "original",
+              "final": 1.2867,
+              "surface": 0.7972,
+              "structure": 0.7855,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-736",
+              "relation": "original",
+              "final": 1.2772,
+              "surface": 0.6241,
+              "structure": 0.607,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "hit_not_marked_original": [
+        {
+          "id": "g3k-128",
+          "source": "geometry3k",
+          "query_text": "According to the Perpendicular Bisector Theorem, what is the length of segment A B below?2.5 cm",
+          "results": [
+            {
+              "id": "g3k-128",
+              "relation": "variant",
+              "final": 0.7651,
+              "surface": 0.859,
+              "structure": 0.8518,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-2521",
+          "source": "geometry3k",
+          "query_text": "Find x for the equilateral triangle R S T if R S = x + 9, S T = 2 x, and R T = 3 x - 9.3x-9",
+          "results": [
+            {
+              "id": "g3k-2521",
+              "relation": "variant",
+              "final": 0.7927,
+              "surface": 0.8559,
+              "structure": 0.8607,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-282",
+          "source": "geometry3k",
+          "query_text": "The height of a triangle is 5 centimeters more than its base. The area of the triangle is 52 square centimeters. Findthebase.b+ 5 cm-bcm",
+          "results": [
+            {
+              "id": "g3k-282",
+              "relation": "variant",
+              "final": 0.7865,
+              "surface": 0.8687,
+              "structure": 0.8592,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-634",
+          "source": "geometry3k",
+          "query_text": "Find the measure of R S of equilateral triangle R S T if R S = x + 9, S T = 2 x, and R T = 3 x - 9.3x-9",
+          "results": [
+            {
+              "id": "g3k-634",
+              "relation": "variant",
+              "final": 0.772,
+              "surface": 0.872,
+              "structure": 0.8754,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "extra_original": [
+        {
+          "id": "g3k-1050",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1829",
+              "relation": "original",
+              "final": 1.2528,
+              "surface": 0.4659,
+              "structure": 0.4396,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1377",
+              "relation": "original",
+              "final": 1.249,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1053",
+          "source": "geometry3k",
+          "query_text": "In P, m E N = 66 and m G P M = 89. Find m G M E.",
+          "results": [
+            {
+              "id": "g3k-1053",
+              "relation": "original",
+              "final": 1.2908,
+              "surface": 0.7674,
+              "structure": 0.7568,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1104",
+              "relation": "original",
+              "final": 1.2812,
+              "surface": 0.6929,
+              "structure": 0.6794,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1058",
+          "source": "geometry3k",
+          "query_text": "Find the variable of d to the nearest tenth. Assume that segments that appear to be tangent are tangent.",
+          "results": [
+            {
+              "id": "g3k-1058",
+              "relation": "original",
+              "final": 1.296,
+              "surface": 0.903,
+              "structure": 0.8951,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-699",
+              "relation": "original",
+              "final": 1.2822,
+              "surface": 0.7657,
+              "structure": 0.7466,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1094",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-1094",
+              "relation": "original",
+              "final": 1.2924,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-148",
+              "relation": "original",
+              "final": 1.2792,
+              "surface": 0.7579,
+              "structure": 0.7411,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-187",
+              "relation": "original",
+              "final": 1.2701,
+              "surface": 0.744,
+              "structure": 0.7194,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1104",
+          "source": "geometry3k",
+          "query_text": "In P, m E N = 66 and m G P M = 89. Find m E G N.",
+          "results": [
+            {
+              "id": "g3k-1104",
+              "relation": "original",
+              "final": 1.29,
+              "surface": 0.7708,
+              "structure": 0.761,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-454",
+              "relation": "original",
+              "final": 1.2837,
+              "surface": 0.71,
+              "structure": 0.6929,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1130",
+          "source": "geometry3k",
+          "query_text": "In rhombus L M P Q, m Q L M = 2 x^ 2 - 10, m Q P M = 8 x, and M P = 10. Find m L",
+          "results": [
+            {
+              "id": "g3k-1130",
+              "relation": "original",
+              "final": 1.2912,
+              "surface": 0.7806,
+              "structure": 0.7772,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1936",
+              "relation": "original",
+              "final": 1.2867,
+              "surface": 0.7689,
+              "structure": 0.7605,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1151",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-1303",
+              "relation": "original",
+              "final": 1.2509,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1158",
+          "source": "geometry3k",
+          "query_text": "Find y.",
+          "results": [
+            {
+              "id": "g3k-1158",
+              "relation": "original",
+              "final": 1.2566,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-805",
+              "relation": "original",
+              "final": 1.2535,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1649",
+              "relation": "original",
+              "final": 1.2511,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1167",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1167",
+              "relation": "original",
+              "final": 1.2508,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1556",
+              "relation": "original",
+              "final": 1.2492,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1372",
+              "relation": "original",
+              "final": 1.2479,
+              "surface": 0.4,
+              "structure": 0.375,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1211",
+          "source": "geometry3k",
+          "query_text": "Find the area of the shaded sector. Round to the nearest tenth.",
+          "results": [
+            {
+              "id": "g3k-1211",
+              "relation": "original",
+              "final": 1.2913,
+              "surface": 0.8807,
+              "structure": 0.8728,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-846",
+              "relation": "original",
+              "final": 1.2782,
+              "surface": 0.7579,
+              "structure": 0.7411,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-187",
+              "relation": "original",
+              "final": 1.2701,
+              "surface": 0.744,
+              "structure": 0.7194,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1237",
+          "source": "geometry3k",
+          "query_text": "In △ A B C, B D is a median. If A D = 3 x + 5 and C D = 5 x - 1, find A C.",
+          "results": [
+            {
+              "id": "g3k-535",
+              "relation": "original",
+              "final": 1.2902,
+              "surface": 0.7923,
+              "structure": 0.7905,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1260",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1260",
+              "relation": "original",
+              "final": 1.2518,
+              "surface": 0.4,
+              "structure": 0.375,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2234",
+              "relation": "original",
+              "final": 1.2508,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1291",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1669",
+              "relation": "original",
+              "final": 1.2504,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1308",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-2482",
+              "relation": "original",
+              "final": 1.2519,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1315",
+          "source": "geometry3k",
+          "query_text": "Find the variable of x to the nearest tenth. Assume that segments that appear to be tangent are tangent.",
+          "results": [
+            {
+              "id": "g3k-1315",
+              "relation": "original",
+              "final": 1.2961,
+              "surface": 0.903,
+              "structure": 0.8951,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-699",
+              "relation": "original",
+              "final": 1.2834,
+              "surface": 0.7805,
+              "structure": 0.7622,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1323",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-936",
+              "relation": "original",
+              "final": 1.2507,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-14",
+              "relation": "original",
+              "final": 1.2486,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1327",
+          "source": "geometry3k",
+          "query_text": "Find the area of the figure. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-1327",
+              "relation": "original",
+              "final": 1.2858,
+              "surface": 0.8052,
+              "structure": 0.7954,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1485",
+              "relation": "original",
+              "final": 1.2816,
+              "surface": 0.8084,
+              "structure": 0.7962,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1338",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1338",
+              "relation": "original",
+              "final": 1.2512,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-36",
+              "relation": "original",
+              "final": 1.2493,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1354",
+          "source": "geometry3k",
+          "query_text": "In the figure, the vertices of quadrilateral A B C D intersect square E F G H and divide its sides into segmentswith measure that have a ratio of 1:2. Find the ratio between the areas of A B C D and E F G H.",
+          "results": [
+            {
+              "id": "g3k-1354",
+              "relation": "original",
+              "final": 1.2952,
+              "surface": 0.9339,
+              "structure": 0.9307,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1903",
+              "relation": "original",
+              "final": 1.2887,
+              "surface": 0.8589,
+              "structure": 0.8542,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1373",
+          "source": "geometry3k",
+          "query_text": "In X, A B = 30, C D = 30, and m C Z = 40. Find A M.",
+          "results": [
+            {
+              "id": "g3k-1373",
+              "relation": "original",
+              "final": 1.2817,
+              "surface": 0.722,
+              "structure": 0.7053,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2940",
+              "relation": "original",
+              "final": 1.2773,
+              "surface": 0.6876,
+              "structure": 0.6699,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1812",
+              "relation": "original",
+              "final": 1.2763,
+              "surface": 0.6623,
+              "structure": 0.6458,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1374",
+          "source": "geometry3k",
+          "query_text": "The segment is tangent to the circle. Find x.",
+          "results": [
+            {
+              "id": "g3k-1374",
+              "relation": "original",
+              "final": 1.2848,
+              "surface": 0.7443,
+              "structure": 0.7336,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-487",
+              "relation": "original",
+              "final": 1.2839,
+              "surface": 0.7827,
+              "structure": 0.7728,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1438",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-2099",
+              "relation": "original",
+              "final": 1.2508,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-45",
+              "relation": "original",
+              "final": 1.2499,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-297",
+              "relation": "original",
+              "final": 1.2495,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1446",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1446",
+              "relation": "original",
+              "final": 1.2514,
+              "surface": 0.4197,
+              "structure": 0.3942,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1081",
+              "relation": "original",
+              "final": 1.2498,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-297",
+              "relation": "original",
+              "final": 1.249,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1455",
+          "source": "geometry3k",
+          "query_text": "A B C D is a rhombus. If E B = 9, A B = 12 and m ∠ A B D = 55. Find m ∠ B D A.",
+          "results": [
+            {
+              "id": "g3k-1455",
+              "relation": "original",
+              "final": 1.281,
+              "surface": 0.7896,
+              "structure": 0.7741,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-1489",
+              "relation": "original",
+              "final": 1.2771,
+              "surface": 0.7489,
+              "structure": 0.7368,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-146",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-712",
+              "relation": "original",
+              "final": 1.2509,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-297",
+              "relation": "original",
+              "final": 1.2491,
+              "surface": 0.4416,
+              "structure": 0.4156,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-694",
+              "relation": "original",
+              "final": 1.2475,
+              "surface": 0.3947,
+              "structure": 0.3733,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1477",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-25",
+              "relation": "original",
+              "final": 1.251,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1482",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1289",
+              "relation": "original",
+              "final": 1.2491,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1527",
+          "source": "geometry3k",
+          "query_text": "Find x.",
+          "results": [
+            {
+              "id": "g3k-1818",
+              "relation": "original",
+              "final": 1.2493,
+              "surface": 0.3658,
+              "structure": 0.3419,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1543",
+          "source": "geometry3k",
+          "query_text": "Find the area of the triangle. Round to the nearest hundredth.",
+          "results": [
+            {
+              "id": "g3k-1543",
+              "relation": "original",
+              "final": 1.2912,
+              "surface": 0.889,
+              "structure": 0.8871,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-2531",
+              "relation": "original",
+              "final": 1.2792,
+              "surface": 0.7354,
+              "structure": 0.716,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        },
+        {
+          "id": "g3k-1544",
+          "source": "geometry3k",
+          "query_text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.",
+          "results": [
+            {
+              "id": "g3k-1544",
+              "relation": "original",
+              "final": 1.2898,
+              "surface": 0.8774,
+              "structure": 0.877,
+              "formula": 0.0
+            },
+            {
+              "id": "g3k-873",
+              "relation": "original",
+              "final": 1.2813,
+              "surface": 0.7784,
+              "structure": 0.7697,
+              "formula": 0.0
+            }
+          ],
+          "error": ""
+        }
+      ],
+      "miss_count": 470,
+      "not_first_count": 6,
+      "hit_not_marked_original_count": 4,
+      "extra_original_count": 140
+    },
+    "complete": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "problem": "Let $g_{\\mathrm{eqsearch}}(x)=x^{2}+3x+2$. Evaluate $g_{\\mathrm{eqsearch}}(4)$.",
+  "level": "Level 2",
+  "type": "Algebra",
+  "solution": "Substitute $x=4$ to get $16+12+2=30$. The unique token SOLUTIONONLYXYZ is unused.\n\n\\boxed{30}"
+}

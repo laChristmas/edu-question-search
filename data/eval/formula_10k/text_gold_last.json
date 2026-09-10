@@ -1,0 +1,66 @@
+{
+  "note": "上一轮公式检测开的文本金标汇总。jsonl 在改跑图搜时被 --no-resume 清掉，整数由全量 10000 条结果减去仍保留的 MATH jsonl 反推。",
+  "math_ocr": true,
+  "overall": {
+    "samples": 6679,
+    "hit": 5983,
+    "first": 5934,
+    "gold_original": 5983,
+    "extra_original": 804,
+    "empty": 0,
+    "hit_rate": 0.8957933822428507,
+    "first_rate": 0.8884563557418775,
+    "gold_original_rate": 0.8957933822428507,
+    "extra_original_rate": 0.12037700254529121,
+    "empty_rate": 0.0,
+    "avg_returned": 1.2299742470429705,
+    "avg_elapsed_s": 0.37620901332504866
+  },
+  "by_source": {
+    "ape": {
+      "samples": 1328,
+      "hit": 1328,
+      "first": 1328,
+      "gold_original": 1328,
+      "extra_original": 0,
+      "empty": 0,
+      "hit_rate": 1.0,
+      "first_rate": 1.0,
+      "gold_original_rate": 1.0,
+      "extra_original_rate": 0.0,
+      "empty_rate": 0.0,
+      "avg_returned": 0.0,
+      "avg_elapsed_s": 0.0
+    },
+    "cm17k": {
+      "samples": 4554,
+      "hit": 4192,
+      "first": 4192,
+      "gold_original": 4192,
+      "extra_original": 371,
+      "empty": 0,
+      "hit_rate": 0.9205094422485727,
+      "first_rate": 0.9205094422485727,
+      "gold_original_rate": 0.9205094422485727,
+      "extra_original_rate": 0.08146684233640755,
+      "empty_rate": 0.0,
+      "avg_returned": 0.0,
+      "avg_elapsed_s": 0.0
+    },
+    "geometry3k": {
+      "samples": 797,
+      "hit": 463,
+      "first": 414,
+      "gold_original": 463,
+      "extra_original": 433,
+      "empty": 0,
+      "hit_rate": 0.5809284818067754,
+      "first_rate": 0.5194479297365119,
+      "gold_original_rate": 0.5809284818067754,
+      "extra_original_rate": 0.5432873274780439,
+      "empty_rate": 0.0,
+      "avg_returned": 0.0,
+      "avg_elapsed_s": 0.0
+    }
+  }
+}
