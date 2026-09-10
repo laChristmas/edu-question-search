@@ -94,10 +94,13 @@ def prepare_query(
 
 
 def recall(gallery: Gallery, query: QueryRecord, k: int) -> list[ScoredCandidate]:
-    """结构文本向量 + 附图向量召回。"""
-    text_vec = gallery.encoder.encode([query.structure_text])
+    """稠密召回：题干向量 ⊕ 加权附图，再全库内积取 top-k。"""
     query_visual = [query.diagram_vector]
-    q = blend_visual(text_vec, query_visual, gallery.config.visual_blend)
+    q = blend_visual(
+        gallery.encoder.encode([query.structure_text]),
+        query_visual,
+        gallery.config.visual_blend,
+    )
     gdim = gallery.index.vectors.shape[1]
     if q.shape[1] < gdim:
         q = np.pad(q, ((0, 0), (0, gdim - q.shape[1])))

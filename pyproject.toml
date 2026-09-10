@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "eqsearch"
 version = "0.1.0"
-description = "Educational question search: paste a stem or upload a photo. Originals first, then variants (max 3). Matches stem, formula, and figure — not photo background."
+description = "Educational question search from a photo. Originals first, then variants (max 3). Matches stem, formula, and figure — not photo background."
 readme = "README.md"
 keywords = [
   "education",

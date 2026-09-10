@@ -1,29 +1,29 @@
 # 变式题检索（eqsearch）
 
-Paste a problem stem or upload a photo. Returns the **original first**, then **variants**, at most **3**. Matches the question (stem ∧ formula ∧ figure), not the photo background. Same operation with a different story is not a variant.
+Upload a problem photo. Returns the **original first**, then **variants**, at most **3**. Matches the question (stem ∧ formula ∧ figure), not the photo background. Same operation with a different story is not a variant.
 
-教育场景的题目检索：粘贴题干或上传题目照片，返回**原题优先、然后变式，最多 3 条**。匹配的是题目本身，不是照片背景。同一运算、不同故事（例如都是平均分配，但题面完全不同）**不算变式**。
+教育场景的**拍照搜题**：用户只上传题目照片，返回**原题优先、然后变式，最多 3 条**。匹配的是题目本身，不是照片背景。同一运算、不同故事（例如都是平均分配，但题面完全不同）**不算变式**。
 
 <!--
 GitHub About (≤350 chars):
-Educational question search: paste a stem or upload a photo. Originals first, then variants (max 3). Matches stem, formula, and figure — not photo background.
+Educational question search from a photo. Originals first, then variants (max 3). Matches stem, formula, and figure — not photo background.
 
-Topics: education, information-retrieval, ocr, math, question-search, fastapi
+Topics: education, ocr, math, question-search, fastapi
 -->
 
 ## 项目描述
 
-eqsearch 是面向中小学与竞赛数学的**原题 / 变式检索**服务，不是答题模型，也不是通用以图搜图。
+eqsearch 是面向中小学与竞赛数学的**原题 / 变式检索**服务。部署时用户**只上传题目照片**。系统不是答题模型，也不是用整张照片外观做通用以图搜图。
 
-用户输入题干或整题照片后，系统先把卷面读成文字和 LaTeX，再用字符 TF-IDF 召回，按规则判定关系后最多返回 3 条：
+流程：照片 → RapidOCR 框字并裁题内附图 →（默认）PaddleOCR-VL 或 Qwen2.5-VL 整图抄题并写出 LaTeX → 与题库对齐，最多返回 3 条。
 
 - **原题**：公式检测开时为题干叙述 ∧ 公式模板 ∧ 题内附图；关时为题干 ∧ 附图。缺图则附图项视为通过。
 - **变式**：结构相同、数量不同。短题干配不同图（如「求 x」「求阴影面积」）视为无关，不返回。
 - **不返回**：无关题、仅题型相近、或分数低于阈值。
 
-拍照路径用 RapidOCR 框字并裁附图；公式检测默认开，优先 **PaddleOCR-VL** 整图抄题，否则 **Qwen2.5-VL-3B**。附图只用 16×16 墨迹网格和 pHash，不使用 CLIP / GME。题库当前可合入 APE、CM17K、Geometry3K、Hendrycks MATH。提供 CLI 与 FastAPI 页面（`POST /v1/search`）。
+附图只用 16×16 墨迹网格和 pHash，不使用 CLIP / GME。题库可合入 APE、CM17K、Geometry3K、Hendrycks MATH。服务为 FastAPI（`POST /v1/search` 上传图片）。
 
-更完整的模块说明、算法与部署硬件见 [docs/项目报告.md](docs/项目报告.md)。
+更完整的模块说明、算法与部署硬件见 [docs/项目报告.md](docs/项目报告.md)。评测数字与各部分失败例子见 [docs/测试报告.md](docs/测试报告.md)。
 
 ## 匹配规则
 
@@ -94,33 +94,31 @@ OCR 默认 **RapidOCR + ONNX** 识文字框（关公式检测时也当题干）�
 .\.venv\Scripts\python -m eqsearch serve --index data\index --port 8000
 ```
 
-浏览器打开 <http://127.0.0.1:8000/>。也可：
+浏览器打开 <http://127.0.0.1:8000/>，上传题目照片。命令行：
 
 ```powershell
-.\.venv\Scripts\python -m eqsearch search --index data\index --text "鸡兔同笼，共有274只脚"
 .\.venv\Scripts\python -m eqsearch search --index data\index --image path\to\question.png
 .\.venv\Scripts\python -m eqsearch search --index data\index --image path\to\question.png --no-math-ocr
 ```
 
-以图搜图请上传**题干 + 配图**的整题照片。只传 Geometry3K 的 `img_diagram.png`（几乎没有题干）时，OCR 读不出文字，会空结果。可用 `data\sample_queries\geometry3k\` 下已验证过的样图。复杂函数（分段、复合、反函数、对数三角）可用 `data\sample_queries\math\` 下的 Hendrycks MATH 试卷图。
+请上传**题干 + 配图**的整题照片。只传 Geometry3K 的 `img_diagram.png`（几乎没有题干）时读不出文字，会空结果。可用 `data\sample_queries\geometry\` 下已验证过的样图。复杂函数（分段、复合、反函数、对数三角）可用 `data\sample_queries\math\` 下的试卷图。
 
 ## HTTP 接口
 
 ### `POST /v1/search`
 
-`multipart/form-data`：
+`multipart/form-data`，部署接口以图片为准：
 
-- `text`：题干，可空（有图时由 OCR 补）
-- `image`：题目图片，可空
-- `ocr`：默认 `auto`（RapidOCR 题干）
-- `math_ocr`：`1`/`0`（或 `true`/`false`）。`1` 走公式检测管线；`0` 只比题干和附图，结果里 `formula` 为 `null`。未传时看环境变量 `EQSEARCH_MATH_OCR`
-- 图片检索且公式检测开时，`formula_engine` 表示开源读图模型是否可用
+- `image`：题目照片（必填）
+- `ocr`：默认 `auto`（RapidOCR 框字、裁附图）
+- `math_ocr`：`1`/`0`（或 `true`/`false`）。`1` 走公式检测管线；`0` 只比识出的题干和附图，结果里 `formula` 为 `null`。未传时看环境变量 `EQSEARCH_MATH_OCR`
+- 公式检测开时，`formula_engine` 表示开源读图模型是否可用
 
-返回摘要：
+返回摘要（`query_text` 为识图结果，不是用户输入）：
 
 ```json
 {
-  "query_text": "识别或提交的题干",
+          "query_text": "从照片识别出的题干",
   "has_diagram": true,
           "math_ocr": true,
           "formula_engine": true,
@@ -170,7 +168,7 @@ src/eqsearch/
   datasets/              # APE / CM17K / Geometry3K / Hendrycks MATH
   text/                  # 规范化、公式、相似度
   vision/                # RapidOCR 文字框、开源 VLM 读题、附图裁剪
-  encode/                # TF-IDF（默认）/ SBERT
+  encode/                # TF-IDF（默认，稠密）/ SBERT
   index/                 # 题库与向量
 ```
 
@@ -180,19 +178,13 @@ src/eqsearch/
 
 ## 评估成功率
 
-```powershell
-.\.venv\Scripts\python -m eqsearch eval --index data\index --limit 200
-```
-
-输出在 `text` 下：`original_hit_rate`（金标是否出现在最多 3 条里）、`original_first_rate`（是否排第一）、`gold_marked_original_rate`（是否标成原题）、`false_extra_original_rate`（是否还误标了别的原题）、`variant_recall_at_3`（改数字后能否召回）。这是**金标文本回灌**，偏乐观，测不到拍照 OCR。
-
-有渲染样图时（`data\sample_queries\math\manifest.txt`，列为 `文件名<TAB>题目id`）：
+部署指标是**拍照检索**：渲染题图走完整识图管线（有 `manifest.txt` 时列为 `文件名<TAB>题目id`）。
 
 ```powershell
 .\.venv\Scripts\python -m eqsearch eval --index data\index --images data\sample_queries\math
 ```
 
-图片评估会走完整识图管线，公式检测开时较慢。`--no-math-ocr` 可关掉公式检测对比。
+输出：`original_hit_rate`（金标是否出现在最多 3 条里）、`original_first_rate`（是否排第一）、`gold_marked_original_rate`（是否标成原题）、`false_extra_original_rate`（是否还误标了别的原题）、空结果率与时延。公式检测开时较慢。`--no-math-ocr` 可关掉公式检测对比。万级评测与失败例子见 [docs/测试报告.md](docs/测试报告.md)，原始分源结果在 `data/eval/formula_10k/`。
 
 ## 测试
 

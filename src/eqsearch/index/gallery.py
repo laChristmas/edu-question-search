@@ -52,7 +52,7 @@ class Gallery:
     def __init__(
         self,
         items: list[GalleryItem],
-        index: VectorIndex,
+        index,
         encoder,
         config: SearchConfig | None = None,
     ) -> None:
@@ -100,8 +100,8 @@ class Gallery:
 def encode_gallery(items: list[GalleryItem], encoder, config: SearchConfig) -> VectorIndex:
     texts = [item.structure_text for item in items]
     encoder.fit(texts)
-    text_vectors = encoder.encode(texts)
-    blended = blend_visual(text_vectors, item_visuals(items), config.visual_blend)
+    encoded = encoder.encode(texts)
+    blended = blend_visual(encoded, item_visuals(items), config.visual_blend)
     return VectorIndex(blended)
 
 

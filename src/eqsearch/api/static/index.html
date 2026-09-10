@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 变式题检索页：原题优先，最多 3 条；以图搜图对齐题干/公式/附图，不比照片背景。 -->
+<!-- 变式题检索页：用户只上传照片；原题优先，最多 3 条；对齐题干/公式/附图，不比照片背景。 -->
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
@@ -7,7 +7,6 @@
   <title>变式题检索</title>
   <style>
     body { font-family: sans-serif; max-width: 880px; margin: 32px auto; color: #111; }
-    textarea { width: 100%; min-height: 96px; }
     .row { margin: 12px 0; }
     .actions { display: flex; gap: 8px; }
     button { padding: 8px 16px; }
@@ -22,15 +21,11 @@
 </head>
 <body>
   <h1>变式题检索</h1>
-  <p>以图搜图：默认比题干和题内附图；打开公式检测后再比公式。不比较照片背景。原题优先，最多 3 条。</p>
+  <p>上传题目照片：默认比识出的题干和题内附图；打开公式检测后再比公式。不比较照片背景。原题优先，最多 3 条。</p>
   <form id="form">
     <div class="row">
-      <label>题目文本（可与图片一起用，也可只上传图片）</label>
-      <textarea name="text" placeholder="粘贴题目，或只上传图片自动识字"></textarea>
-    </div>
-    <div class="row">
-      <label>题目图片（拍题即可；不比较照片背景）</label>
-      <input type="file" name="image" accept="image/*" />
+      <label>题目图片</label>
+      <input type="file" name="image" accept="image/*" required />
     </div>
     <div class="row">
       <label class="switch">
@@ -85,6 +80,11 @@
       submit.disabled = true;
       status.textContent = "检索中…公式检测会缩小大图后读题，请稍候。";
       const data = new FormData(form);
+      if (!data.get("image") || !data.get("image").size) {
+        submit.disabled = false;
+        status.textContent = "请上传题目照片。";
+        return;
+      }
       data.set("ocr", "auto");
       persistMathOcr();
       data.set("math_ocr", mathOcr.checked ? "1" : "0");
