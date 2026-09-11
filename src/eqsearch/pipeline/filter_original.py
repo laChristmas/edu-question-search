@@ -74,7 +74,7 @@ def formula_matches(query: QueryRecord, candidate: ScoredCandidate, config: Sear
 
 
 def diagram_matches(query: QueryRecord, candidate: ScoredCandidate, config: SearchConfig) -> bool:
-    """Compare attached figures only. Full-photo hashes must not reach here."""
+    """只比较附图. 禁止整图哈希进入此函数."""
     sim = diagram_similarity(query.diagram_vector, candidate.item.diagram_vector)
     distance = hamming_distance(query.phash, candidate.item.phash)
     candidate.phash_distance = distance
